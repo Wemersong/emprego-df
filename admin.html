@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Administrativo - Emprego DF</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Painel Administrativo</h1>
+    <p>Gerencie as vagas do Emprego DF</p>
+  </header>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="classificados.html">Classificados</a>
+    <a href="publicar.html">Publicar Vaga</a>
+    <a href="contato.html">Contato</a>
+    <a href="admin.html">Administração</a>
+  </nav>
+  <main class="container">
+    <section class="boas-vindas">
+      <h2>Adicionar Nova Vaga</h2>
+    </section>
+    <form id="adminForm" class="formulario">
+      <label>Nome da Empresa:</label>
+      <input type="text" id="empresa" required>
+      <label>Título da Vaga:</label>
+      <input type="text" id="titulo" required>
+      <label>Local:</label>
+      <input type="text" id="local" required>
+      <label>Salário:</label>
+      <input type="text" id="salario">
+      <label>Descrição:</label>
+      <textarea id="descricao" rows="5" required></textarea>
+      <button type="submit">Adicionar Vaga</button>
+    </form>
+    <section class="boas-vindas" style="margin-top:30px;">
+      <h2>Vagas Cadastradas</h2>
+    </section>
+    <section class="vagas" id="adminVagas"></section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Emprego DF - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
